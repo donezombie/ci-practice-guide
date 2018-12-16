@@ -1,1 +1,2 @@
-##TechKids Code Intensive Practice Guide
+## TechKids
+### Hướng dẫn thực hành cho khoá Code Intensive
