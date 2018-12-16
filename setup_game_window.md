@@ -1,6 +1,5 @@
-## TechKids - Code Intensive
-### Hướng dẫn thực hành
-#### Chuẩn bị cửa sổ game
+## TechKids - Code Intensive - Hướng dẫn thực hành
+### Chuẩn bị cửa sổ game
 
 1. Tạo file `GameWindow.java` trong folder 'src'
 
@@ -220,7 +219,7 @@ public void windowClosing(WindowEvent e) {
 }
 </pre>
 
-Chú ý: System.exit() là hàm thực hiện việc thoát toàn bộ chương trình, hàm này yêu cầu một tham số truyền vào tên là status, kiểu int, để biểu hiện lý do thoát chương trình, với `status=0` biểu hiện chương trình được thoát và không có lỗi xảy ra trước đó
+Chú ý: `System.exit()` là hàm thực hiện việc thoát toàn bộ chương trình, hàm này yêu cầu một tham số truyền vào tên là status, kiểu int, để biểu hiện lý do thoát chương trình, với `status=0` biểu hiện chương trình được thoát và không có lỗi xảy ra trước đó
 
 30. Chạy thử chương trình, khi cửa sổ game hiện lên, bấm vào nút ![X button](images/setup_game_window/x_button.png), sẽ thấy chương trình được thoát hẳn
 
@@ -229,3 +228,9 @@ Chú ý: System.exit() là hàm thực hiện việc thoát toàn bộ chương 
 31. Để cho gọn code, click vào nút ![Collapse button](images/setup_game_window/collapse_button.png) ở đầu dòng `addWindowListener` để thu nhỏ lại toàn bộ phần code này
 
 ![Add window listener line](images/setup_game_window/add_window_listener_line.png)
+
+sẽ được như sau
+
+![Collapsed addWindowListener](images/setup_game_window/collapse_add_window_listener.png)
+
+*Phần kế tiếp [Chuẩn bị Game Canvas](setup_game_canvas.md)*
