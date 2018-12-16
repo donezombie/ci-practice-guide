@@ -1,7 +1,9 @@
-## TechKids
-### Hướng dẫn thực hành cho khoá Code Intensive
+## TechKids - Code Intensive
+### Hướng dẫn thực hành
 #### Mục lục
-1. Thêm ảnh nền và nhân vật
+1. [Chuẩn bị dự án (Setup project)][setup_project.md]
+1. [Thêm ảnh nền][add_background.md]
+2. Thêm nhân vật
 2. Di chuyển nhân vật
 3. Vòng lặp game (game loop)
 4. Tấn công
