@@ -8,7 +8,7 @@
 
 2. Tạo project
 
-3. Thêm file Program.java cùng hàm main
+3. Thêm file `Program.java` cùng hàm main
 ```
 public class Program {
     public static void main(String[] args) {
@@ -16,7 +16,7 @@ public class Program {
     }
 }
 ```
-4. Trong hàm main, in "hello world" để kiểm tra
+4. Trong hàm main, in `"Hello world"` để kiểm tra
 ```
 public class Program {
     public static void main(String[] args) {
@@ -25,8 +25,7 @@ public class Program {
 }
 ```
 4. Chạy thử để kiểm tra
-Nếu chương trình chạy không báo lỗi, và hiện lên dòng "Hello world" như kỳ vọng, IntejjiJ và JDK đã hoạt động.
-```
-Hello world
-Process finished with exit code 0
-```
+Nếu chương trình chạy không báo lỗi, và hiện lên dòng `"Hello world"` như kỳ vọng, IntelliJ và JDK đã hoạt động.
+
+
+![Hello world result](/images/setup_project/hello_world_result.PNG)
