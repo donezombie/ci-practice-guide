@@ -1,5 +1,4 @@
-## TechKids - Code Intensive
-### Hướng dẫn thực hành
+## TechKids - Code Intensive - Hướng dẫn thực hành
 #### Mục lục
 1. [Chuẩn bị dự án (setup project)](setup_project.md)
 2. [Chuẩn bị cửa sổ game (setup game window)](setup_game_window.md)
