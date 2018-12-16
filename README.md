@@ -1,5 +1,5 @@
 ## TechKids - Code Intensive - Hướng dẫn thực hành
-#### Mục lục
+### Mục lục
 1. [Chuẩn bị dự án (setup project)](setup_project.md)
 2. [Chuẩn bị cửa sổ game (setup game window)](setup_game_window.md)
 3. [Chuẩn bị cửa sổ game canvas (setup game canvas)](setup_game_canvas.md)
