@@ -1,7 +1,7 @@
 ## TechKids - Code Intensive
 ### Hướng dẫn thực hành
 #### Mục lục
-1. [Chuẩn bị dự án][https://github.com/qhuydtvt/ci-practice-guide/blob/master/setup_project.md]
+1. [Chuẩn bị dự án (setup project)](https://github.com/qhuydtvt/ci-practice-guide/blob/master/setup_project.md)
 1. [Thêm ảnh nền][add_background.md]
 2. Thêm nhân vật
 2. Di chuyển nhân vật
