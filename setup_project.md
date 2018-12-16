@@ -28,3 +28,5 @@ Nếu chương trình chạy không báo lỗi, và hiện lên dòng `"Hello wo
 
 
 ![Hello world result](/images/setup_project/hello_world_result.PNG)
+
+*Bài tiếp theo [Chuẩn bị Game Window](setup_game_window.md)*

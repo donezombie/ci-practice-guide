@@ -1,5 +1,5 @@
 ## TechKids - Code Intensive - Hướng dẫn thực hành
-### Chuẩn bị cửa sổ game
+### Chuẩn bị cửa sổ game (Game window)
 
 1. Tạo file `GameWindow.java` trong folder 'src'
 
@@ -233,4 +233,4 @@ sẽ được như sau
 
 ![Collapsed addWindowListener](images/setup_game_window/collapse_add_window_listener.png)
 
-*Phần kế tiếp [Chuẩn bị Game Canvas](setup_game_canvas.md)*
+*Bài tiếp theo [Chuẩn bị Game Canvas](setup_game_canvas.md)*
