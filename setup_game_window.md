@@ -21,7 +21,7 @@ public class GameWindow <b>extends JFrame</b> {
 
 Làm như trên sẽ biến GameWindow thành một `JFrame`, sẽ thừa hưởng đầy đủ đặc tính mà một cửa sổ (window) cần có
 
-3. Khởi tạo một `GameWindow`, tên là 'gw' trong hàm `main`. Ở đây, hãy tạm thừa nhận các từ khóa như `new` hay hàm `GameWindow()`, những khái niệm này cũng sẽ được trình bày sau
+3. Khởi tạo một `GameWindow`, tên là `gw` trong hàm `main`. Ở đây, hãy tạm thừa nhận các từ khóa như `new` hay hàm `GameWindow()`, những khái niệm này cũng sẽ được trình bày sau
 <pre>
 public class Program {
   public static void main(String[] args) {
@@ -32,7 +32,7 @@ public class Program {
 
 4. Chạy chương trình
 
-5. Mặc dù đã có một GameWindow là `gw`, nhưng sau khi chạy, sẽ thấy <b>kết quả là không có bất kỳ cửa sổ nào được hiện ra</b>. Lý do cho việc này là khi được tạo ra, các `JFrame` hay cụ thể trong trường hợp này là cửa sổ game không được mặc định là sẽ hữu hình - invisible hay `visible=false`
+5. Mặc dù đã có một GameWindow là `gw`, nhưng sau khi chạy, sẽ thấy <b>kết quả là không có bất kỳ cửa sổ nào được hiện ra</b>. Lý do cho việc này là khi được tạo ra, các `JFrame` hay cụ thể là `GameWindow` - `gw` không được mặc định là sẽ hữu hình - invisible hay `visible=false`
 
 6. Để sửa việc này, vào file `GameWindow.java`, trong class `GameWindow`, thêm hàm `GameWindow()` như sau:
 <pre>
@@ -43,7 +43,7 @@ public class GameWindow extends JFrame {
 }
 </pre>
 
-<i>Chú ý: Hàm được thêm vào bắt đầu bằng `public`, vì có tên trùng với tên của class chứa nó - `GameWindow` nên được gọi là hàm tạo - (constructor), cũng sẽ được trình bày vào các bài sau.</i>
+<i>Chú ý: Hàm được thêm vào, bắt đầu bằng `public`, vì có tên trùng với tên class chứa nó - `GameWindow` nên được gọi là hàm tạo - (constructor), cũng sẽ được trình bày vào các bài sau.</i>
 
 7. Trong hàm `GameWindow()`, viết thêm đoạn sau để `GameWindow` được hiện hình
 <pre>
@@ -67,13 +67,13 @@ public class GameWindow extends <b>JFrame</b> {
 }
 </pre>
 
-Nếu không kịp dùng chức năng trên, có thể phát sinh lỗi java không hiểu JFrame là gì, hiện lên màu đỏ, như sau
+Nếu không kịp dùng chức năng trên, có thể phát sinh lỗi java không hiểu JFrame là gì, để `JFrame` hiện lên màu đỏ, như sau
 
 ![JFrame error](images/setup_game_window/JFrame_error.png)
 
-Để khắc phục lỗi này, hoặc có thể click vào phần bị lỗi là `JFrame`, rồi gõ `Alt+TAB` để Intellij tự tìm cách import thư viện còn thiếu vào.
+Để khắc phục lỗi này, có thể click vào phần bị lỗi là `JFrame`, rồi nhấn `ALT+TAB` để Intellij tự tìm cách import thư viện còn thiếu vào.
 
-Tất nhiên, vẫn có thể thực hiện cách trực tiếp nhất là gõ thêm `import javax.swing.*;` vào những dòng đầu tiên của `GameWindow.java`
+Tất nhiên, vẫn có thể thực hiện cách trực tiếp nhất là gõ thêm `import javax.swing.*;` vào những đầu file `GameWindow.java`
 
 9. Chạy chương trình
 
