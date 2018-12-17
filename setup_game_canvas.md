@@ -60,6 +60,7 @@ protected void paintComponent(Graphics g) {
 ![Window without canvas](images/setup_game_canvas/window_without_canvas.png)
 
 10. Lắp `GameCanvas` vào `GameWindow`
+
 Bật file `GameWindow.java`, trong class `GameWindow`, khai báo thêm thuộc tính (property) `GameCanvas gc`
 
 <pre>
@@ -69,7 +70,7 @@ public class GameWindow extends JFrame {
       ...
 </pre>
 
-11. Trong hàm tạo `GameWindow()`, trước `setVisible(true)` khởi tạo `gc`
+11. Trong hàm tạo `GameWindow()`, trước `setVisible(true)`, khởi tạo `gc`
 
 <pre>
 public GameWindow() {
@@ -79,7 +80,7 @@ public GameWindow() {
 }
 </pre>
 
-12. Sau khi khởi tạo `gc` lắp `GameCanvas gc` này vào `GameWindow` sử dụng hàm `setContentPane()`
+12. Sau khi thực hiện khởi tạo, lắp `GameCanvas gc` này vào `GameWindow` sử dụng hàm `setContentPane()`
 
 <pre>
 public GameWindow() {
