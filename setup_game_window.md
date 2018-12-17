@@ -65,6 +65,7 @@ Nếu không kịp dùng chức năng trên, có thể phát sinh lỗi java kh�
 Để khắc phục lỗi này, có thể click vào phần bị lỗi là `JFrame`, rồi nhấn `ALT+TAB` để Intellij tự tìm cách import thư viện còn thiếu vào.
 
 Tất nhiên, vẫn có thể thực hiện cách trực tiếp nhất là gõ thêm `import javax.swing.*;` vào đầu file `GameWindow.java`
+
 7. Trong hàm `GameWindow()`, thêm đoạn sau để `GameWindow` được hiện ra
 
 <pre>
