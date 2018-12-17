@@ -97,4 +97,6 @@ public GameWindow() {
 
 ![Black filled canvas](images/setup_game_canvas/black_filled_canvas.png)
 
+15. Có thể thấy, `GameCanvas` sẽ phụ trách việc hiển thị của game, thế nên tất cả những vấn đề liên quan đến hiển thị, như vẽ hình nền, vẽ nhân vật game, sẽ được thực hiện trên `GameCanvas`
+
 *Bài tiếp theo [Thêm assets cho game](add_assets.md)*
