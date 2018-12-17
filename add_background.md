@@ -5,13 +5,13 @@
 
 ![Assets images background](images/add_background/expand_to_show_background.png)
 
-2. Click đúp vào file `0.png`, sẽ thấy IntelliJ hiện ra hình nền, đây chính là hình nền sử dụng cho game
+2. Click đúp vào file `0.png`, sẽ thấy IntelliJ hiển thị hình này lên, đây chính là hình nền sử dụng cho game
 
 ![Show background](images/add_background/show_background.png)
 
-3. Mở file `GameCavas.java`
+3. Mở file `GameCanvas.java`
 
-4. Khai báo thuộc tính (property) `background`, kiểu `BufferedImage` để sắp tới thực hiện chứa nội dung của ảnh nền
+4. Khai báo thuộc tính (property) `background`, kiểu `BufferedImage` để sắp tới sẽ chứa nội dung của ảnh nền
 
 <pre>
 import java.awt.image.BufferedImage;
@@ -34,7 +34,7 @@ public class GameCanvas extends JPanel {
 }
 </pre>
 
-6. Thực hiện load file hình nền `0.png` trong hàm tạo `GameCanvas` sử dụng hàm `read()` thư viện `ImageIO`. 
+6. Thực hiện load file hình nền `0.png` trong hàm tạo `GameCanvas` sử dụng hàm `read()` của thư viện `ImageIO`. 
 
 <pre>
 ...
@@ -49,7 +49,7 @@ public class GameCanvas extends JPanel {
 }
 </pre>
 
-Chú ý: Việc để load file trong hàm tạo này để khi một `GameCanvas` được tạo ra, file hình nền sẽ tự động được load
+Chú ý: Cần để thao tác load file trong hàm tạo, để khi một `GameCanvas` được tạo ra, file hình nền sẽ tự động được load
 
 7. Khi viết đến `read()`, IntelliJ sẽ gợi ý như sau
 
@@ -72,14 +72,14 @@ public GameCanvas() {
 
 ![ImageIO read error](images/add_background/imageio_read_error.png)
 
-11. Những lỗi như trên được gọi là `Exception`, thường sẽ được sinh ra khi có lỗi ngoài ý muốn, thông thường không kiểm soát được bởi người lập trình. Ví dụ trong trường hợp này chính là việc đường dẫn tới background `0.png` tại thời điểm load có thực sự tồn tại hay không (bị xóa mất hay bị chuyển đi folder khác).
+11. Lỗi báo như trên được gọi là `Exception`, thường sẽ được sinh ra khi có phát sinh lỗi ngoài ý muốn, thông thường không kiểm soát được bởi người lập trình. Ví dụ trong trường hợp này chính là việc đường dẫn tới background `0.png` tại thời điểm load có thực sự tồn tại hay không (bị xóa mất hay bị chuyển đi folder khác).
 
-12. Cách thường được chọn để giải quyết trong các tình huống này là bọc phần code có khả năng sinh `Exception` bằng khối `try-catch`, bằng cách chọn vào chỗ đang được báo lỗi là hàm `read()` rồi nhấn `Atl+Enter`, chọn `Surround with try-cath` rồi nhấn `Enter`
+12. Cách thường được chọn để giải quyết trong các tình huống này là bọc phần code có khả năng sinh `Exception` bằng khối `try-catch`, bằng cách chọn vào chỗ đang được báo lỗi là hàm `read()` rồi nhấn `Atl+Enter`, chọn "Surround with try/catch" rồi nhấn `Enter`
 
 ![Atl tab suggest](images/add_background/alt_tab_suggest.png)
 
 
-12. IntelliJ sẽ sinh ra khối `try-catch` để bọc lại đoạn code có `Exception`
+12. IntelliJ sẽ sinh ra khối `try-catch` để bọc lại đoạn code có `Exception` như sau
 
 <pre>
 <b>try {</b>
@@ -89,7 +89,7 @@ public GameCanvas() {
 }</b>
 </pre>
 
-13. Ý tưởng của `try-catch` là sẽ để chương trình <b>thử</b> (`try`) thực hiện một đoạn lệnh nào đó, nếu đoạn lệnh này có xảy ra lỗi (`Exception`) thì thay vì dừng chương trình lại thì chương trình sẽ thực hiện lệnh trong khối `catch` và sau đó vẫn chạy tiếp bình thường.
+13. Ý tưởng của `try-catch` là sẽ để chương trình <b>thử</b> (`try`) thực hiện một đoạn lệnh nào đó, nếu đoạn lệnh này có xảy ra lỗi (`Exception`) thì thay vì chương trình dừng lại thì sẽ thực hiện lệnh trong khối `catch` và sau đó vẫn chạy tiếp bình thường.
 
 14. Nếu việc load ảnh thành công, khối lệnh trong `catch` sẽ không được thực hiện. Có thể mô phỏng tình huống lỗi bằng cách làm cho đường dẫn tới file hình nền `0.png` bị sai lệch
 
