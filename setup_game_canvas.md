@@ -25,7 +25,7 @@ public class GameCanvas <b>extends JPanel</b> {
 
 ![Override paint component](images/setup_game_canvas/override_paint_component.png)
 
-4. Chú ý rằng sau khi nhấn `ENTER`, một thư viện khác sẽ được import vào file `GameCanvas.java`, toàn bộ khai báo hàm và thân hàm của `paintComponent` cũng sẽ được IntellJ điền nốt
+Chú ý rằng sau khi nhấn `ENTER`, một thư viện khác sẽ được import vào file `GameCanvas.java`, toàn bộ khai báo hàm và thân hàm của `paintComponent` cũng sẽ được IntellJ điền nốt
 
 <pre>
 import javax.swing.*;
