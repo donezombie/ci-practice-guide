@@ -96,3 +96,5 @@ public GameWindow() {
 14. Có thể thấy, `GameCanvas` cùng hàm `paintComponent` với thao tác tô màu đen toàn màn hình đã phát huy tác dụng. `GameCanvas` đã chuẩn bị xong
 
 ![Black filled canvas](images/setup_game_canvas/black_filled_canvas.png)
+
+*Bài tiếp theo [Thêm hình nền](add_background.md)*
