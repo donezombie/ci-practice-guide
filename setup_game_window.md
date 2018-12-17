@@ -86,11 +86,11 @@ Có thể thấy, hàm `setVisible(true)` không được khai báo ở t
 
 11. Luôn nhớ rằng, trong tương lai, hàm `setVisible(true)` sẽ là hàm được gọi sau cùng, sau tất cả các thao tác, đặc biệt là các thao tác chỉnh cấu hình như kích thước, màu sắc, trong `GameWindow`. Ý tưởng của việc này là `GameWindow` cần được thao tác cấu hình tất cả mọi thứ trước khi được hiện ra
 
-12. Điều chỉnh kích thước của `GameWindow` thành `800x600` ngay sau khi tạo ra bằng cách thêm đoạn sau vào trước `setVisible(true)`
+12. Điều chỉnh kích thước của `GameWindow` thành `384x600` ngay sau khi tạo ra bằng cách thêm đoạn sau vào trước `setVisible(true)`
 <pre>
 public class GameWindow extends JFrame {
   public GameWindow() {
-      <b>setSize(800, 600);</b>
+      <b>setSize(384, 600);</b>
       setVisible(true);
   }
 }
@@ -104,7 +104,7 @@ public class GameWindow extends JFrame {
 <pre>
 public GameWindow() {
     <b>setResizable(false);</b>
-    setSize(800, 600);
+    setSize(384, 600);
     setVisible(true);
 }
 </pre>
@@ -125,7 +125,7 @@ public GameWindow() {
 <pre>
 public GameWindow() {
     setResizable(false);
-    setSize(800, 600);
+    setSize(384, 600);
     <b>addWindowListener();</b>
     setVisible(true);
 }
@@ -141,7 +141,7 @@ public GameWindow() {
 <pre>
 public GameWindow() {
     setResizable(false);
-    setSize(800, 600);
+    setSize(384, 600);
     addWindowListener(<b>new WindowListener</b>);
     setVisible(true);
 }

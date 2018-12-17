@@ -49,7 +49,7 @@ public class GameCanvas extends JPanel {
 <pre>
 @Override
 protected void paintComponent(Graphics g) {
-    <b>g.fillRect(0, 0, 800, 600);</b>
+    <b>g.fillRect(0, 0, 384, 600);</b>
 }
 </pre>
 
@@ -97,4 +97,4 @@ public GameWindow() {
 
 ![Black filled canvas](images/setup_game_canvas/black_filled_canvas.png)
 
-*Bài tiếp theo [Thêm hình nền](add_background.md)*
+*Bài tiếp theo [Thêm ảnh nền](add_background.md)*
