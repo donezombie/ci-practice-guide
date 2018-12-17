@@ -97,4 +97,4 @@ public GameWindow() {
 
 ![Black filled canvas](images/setup_game_canvas/black_filled_canvas.png)
 
-*Bài tiếp theo [Thêm ảnh nền](add_background.md)*
+*Bài tiếp theo [Thêm assets cho game](add_assets.md)*

@@ -4,7 +4,8 @@
 2. [Tổng quan (overview)](overview.md)
 3. [Chuẩn bị cửa sổ game (setup game window)](setup_game_window.md)
 4. [Chuẩn bị cửa sổ game canvas (setup game canvas)](setup_game_canvas.md)
-5. [Thêm ảnh nền (add background)](add_background.md)
+5. [Thêm assets cho game (add game assets)](add_assets.md)
+5. [Thêm hình nền (add background)](add_background.md)
 6. Thêm nhân vật
 7. Di chuyển nhân vật
 8. Vòng lặp game (game loop)
