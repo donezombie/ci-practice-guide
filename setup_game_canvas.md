@@ -12,7 +12,7 @@ public class GameCanvas <b>extends JPanel</b> {
 }
 </pre>
 
-Chú ý: Có thể sử dụng chức năng autocomplete của IntelliJ như đã làm ở phần [Chuẩn bị game window](setup_game_window.md) hoặc tự thêm `import javax.swing.*;` để được kết quả như sau:
+Có thể sử dụng chức năng autocomplete của IntelliJ như đã làm ở phần [Chuẩn bị game window](setup_game_window.md) hoặc tự thêm `import javax.swing.*;` để được kết quả như sau:
 
 <pre>
 <b>import javax.swing.*;</b>
@@ -55,7 +55,9 @@ protected void paintComponent(Graphics g) {
 
 8. Chạy chương trình
 
-9. Sẽ được kết quả là màn hình vẫn màu trắng như cũ, lý do là `GameCanvas` đã được khai báo nhưng chưa được mang ra dùng
+9. Sẽ được kết quả là `GameWindow` <b>vẫn màu trắng như cũ</b>, lý do là `GameCanvas` đã được khai báo nhưng chưa được mang ra dùng
+
+![Window without canvas](images/setup_game_canvas/window_without_canvas.png)
 
 10. Lắp `GameCanvas` vào `GameWindow`
 Bật file `GameWindow.java`, trong class `GameWindow`, khai báo thêm thuộc tính (property) `GameCanvas gc`
