@@ -49,7 +49,7 @@ public class GameCanvas extends JPanel {
 <pre>
 @Override
 protected void paintComponent(Graphics g) {
-    <b>fillRect(0, 0, 800, 600);</b>
+    <b>g.fillRect(0, 0, 800, 600);</b>
 }
 </pre>
 
