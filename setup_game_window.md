@@ -32,7 +32,7 @@ public class Program {
 
 4. Chạy chương trình
 
-5. Mặc dù đã có một GameWindow là `gw`, nhưng sau khi chạy, sẽ thấy <b>kết quả là không có bất kỳ cửa sổ nào được hiện ra</b>. Lý do cho việc này là khi được tạo ra, các `JFrame` hay cụ thể là `GameWindow` - `gw` không được mặc định là sẽ hữu hình - invisible hay `visible=false`
+5. Mặc dù đã có một GameWindow là `gw` được tạo ra, nhưng sau khi chạy, sẽ thấy <b>kết quả là không có bất kỳ cửa sổ nào được hiện ra</b>. Lý do cho việc này là khi được tạo ra, các `JFrame` hay cụ thể là `GameWindow` - `gw` không được mặc định là sẽ hữu hình - invisible hay `visible=false`
 
 6. Để sửa việc này, vào file `GameWindow.java`, trong class `GameWindow`, thêm hàm `GameWindow()` như sau:
 <pre>
@@ -45,16 +45,7 @@ public class GameWindow extends JFrame {
 
 <i>Chú ý: Hàm được thêm vào, bắt đầu bằng `public`, vì có tên trùng với tên class chứa nó - `GameWindow` nên được gọi là hàm tạo - (constructor), cũng sẽ được trình bày vào các bài sau.</i>
 
-7. Trong hàm `GameWindow()`, viết thêm đoạn sau để `GameWindow` được hiện hình
-<pre>
-public class GameWindow extends JFrame {
-  public GameWindow() {
-    <b>setVisible(true);</b>
-  }
-}
-</pre>
-
-8. Chú ý: Khi thêm JFrame, hãy tận dụng chức năng autocomplete của IntelliJ, cụ thể khi gõ gần đủ chữ `JFrame`, Intellij sẽ đưa ra các gợi ý để viết nốt class này
+8. Khi thêm JFrame, hãy tận dụng chức năng autocomplete của IntelliJ, cụ thể khi gõ gần đủ chữ `JFrame`, Intellij sẽ đưa ra các gợi ý để viết nốt class này
 
 ![JFrame Autocomplete](images/setup_game_window/JFrame_autocomplete.png)
 
@@ -73,7 +64,18 @@ Nếu không kịp dùng chức năng trên, có thể phát sinh lỗi java kh�
 
 Để khắc phục lỗi này, có thể click vào phần bị lỗi là `JFrame`, rồi nhấn `ALT+TAB` để Intellij tự tìm cách import thư viện còn thiếu vào.
 
-Tất nhiên, vẫn có thể thực hiện cách trực tiếp nhất là gõ thêm `import javax.swing.*;` vào những đầu file `GameWindow.java`
+Tất nhiên, vẫn có thể thực hiện cách trực tiếp nhất là gõ thêm `import javax.swing.*;` vào đầu file `GameWindow.java`
+7. Trong hàm `GameWindow()`, thêm đoạn sau để `GameWindow` được hiện ra
+
+<pre>
+public class GameWindow extends JFrame {
+  public GameWindow() {
+    <b>setVisible(true);</b>
+  }
+}
+</pre>
+
+Có thể thấy, hàm `setVisible(true)` không được khai báo ở trong `GameWindow` nhưng vẫn có thể mang ra sử dụng mà không hề gây lỗi, lý do là `setVisible`, giống như các hàm mang ra dùng trực tiếp tiếp theo ở bài này như `setSize` hay `addWindowListener`, là hàm mà `GameWindow` được thừa hưởng, có sẵn từ `JFrame`
 
 9. Chạy chương trình
 
@@ -132,7 +134,7 @@ public GameWindow() {
 
 ![Missing window listener](images/setup_game_window/missing_window_listener.png)
 
-21. Ý tưởng của phần listener (lắng nghe) này sẽ thư viện, hay hệ thống sẽ cho người lập trình biết chính xác khi nào sự kiện xảy ra, bằng các hàm như `addWindowListener()` tuy nhiên thường không biết người lập trình  thao tác xử lý gì khi các sự kiện này xảy ra, nên sẽ yêu cầu các Thao xử lý này khi bắt sự kiện, trong trường này chính là một `WindowListener`
+21. Ý tưởng của phần listener (lắng nghe) này xuất phát từ việc cho phép người lập trình viết ra các thao tác xử lý sự kiện của mình vào trong một listener rồi gọi một hàm như `addWindowListener` để gắn listener mình tạo ra vào nơi mà các sự kiện này sẽ xảy ra, cụ thể trong trường hợp này là `GameWindow` hay `JFrame`, để khi các sự kiện này xảy ra, listener sẽ được `GameWindow` hay `JFrame` thông báo, từ đó gọi vào các hàm với các thao tác xử lý tương ứng.
 
 22. Để cung cấp `WindowListener`, thêm `new WindowListener` vào trong cặp ngoặc tròn
 <pre>
