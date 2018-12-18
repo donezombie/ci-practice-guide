@@ -1,7 +1,7 @@
 ## TechKids - Code Intensive - Hướng dẫn thực hành
 ### Thêm nhân vật chính
 
-1. Khai báo một thuộc tính kiểu `BufferedImage` tên là player trong `GameCanvas`
+1. Khai báo một thuộc tính kiểu `BufferedImage` tên là `player` trong `GameCanvas`
 
 <pre>
 public class GameCanvas extends JPanel {
@@ -11,7 +11,7 @@ public class GameCanvas extends JPanel {
 }
 </pre>
 
-2. Thực hiện load file ảnh player đã cho và lưu vào player
+2. Thực hiện load file ảnh player đã cho vào `player`
 
 <pre>
 try {
@@ -30,7 +30,7 @@ Chú ý:
 
 * Vì `Exception` của việc load background và việc load player là gióng nhau (`IOException`) nên có thể dùng chung khối `try-catch`
 
-3. Thực hiện vẽ `player` vừa trong hàm `paintComponent`. Vị trí (x, y) của player được tạm tính là x = 384 / 2 = 192 và y vào khoảng 500
+3. Thực hiện vẽ `player` vừa trong hàm `paintComponent`. Vị trí (x, y) của player được tạm tính là `x = 384 / 2 = 192` và `y` vào khoảng `500`
 
 <pre>
 protected void paintComponent(Graphics g) {
@@ -44,10 +44,16 @@ Chú ý: Cũng giống với `background` phải được vẽ sau khi đ�
 
 4. Chạy chương trinh
 
-5. Kết quả nhận được là player có hiện lên tuy nhiên hơi bị lệch sang phải
+5. Kết quả nhận được là `player` có hiện lên tuy nhiên hơi bị lệch sang phải
 
 ![Not middle player](images/add_player/not_middle_player.png)
 
-6. Lý do cho việc player bị lệch sang phải như trên, tất nhiên, là do tọa độ x tính toán không được chính xác
+6. Lý do cho việc `player` bị lệch sang phải như trên, tất nhiên, là do tọa độ x tính toán không được chính xác
 
-7. Một cách chi tiết hơn, trong `Swing` cũng như rất nhiều các thư viện khác, khi một hình được vẽ lên trên một bề mặt 
+7. Một cách chi tiết hơn, trong `Swing` cũng như rất nhiều các thư viện khác, khi một hình được vẽ lên trên một bề mặt, thì mặc định, hình sẽ được đặt vào sao cho góc trái của hình trùng với điểm vẽ. Minh họa như sau
+
+![Player anchor](images/add_player/player_anchor.png)
+
+Khi vẽ `player` lên, sẽ thành
+
+![Player anchor](images/add_player/player_anchor_drawn.png)
