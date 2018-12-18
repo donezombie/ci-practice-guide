@@ -57,3 +57,27 @@ Chú ý: Cũng giống với `background` phải được vẽ sau khi đ�
 Khi vẽ `player` lên, sẽ thành
 
 ![Player anchor](images/add_player/player_anchor_drawn.png)
+
+Chú ý: Điểm dùng để đặt `player` sao cho trùng với điểm vẽ, được gọi là **anchor**, hay là điểm mỏ neo, trong `Swing` được mặc định là góc trên bên trái của 
+
+8. Như vậy, để đặt được player ra chính giữa màn hình, cần phải dịch `player` sang bên trái một khoảng đúng bằng một nửa độ rộng của ảnh
+
+![Player shift left](images/add_player/player_shift_left.png)
+
+9.  Như vậy, vị trí theo trục x của player sẽ là `192 - player_width / 2 = 192 - 32/2 = 176`, phần vẽ hình player sẽ được cập nhật tương ứng như sau
+
+<pre>
+protected void paintComponent(Graphics g) {
+    g.fillRect(0, 0, 384, 600);
+    g.drawImage(background, 0, 0, null);
+    g.drawImage(player, <b>176</b>,  500, null);
+}
+</pre>
+
+10. Chạy chương trình
+
+11. `player` đã được đặt ở chính giữa như kỳ vọng
+
+![Player right position](images/add_player/player_right_position.png)
+
+*Bài tiếp theo [Thêm di chuyển của player](add_player_movement.md)*
