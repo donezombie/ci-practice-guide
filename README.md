@@ -6,7 +6,8 @@
 4. [Chuẩn bị cửa sổ game canvas (setup game canvas)](setup_game_canvas.md)
 5. [Thêm assets cho game (add game assets)](add_assets.md)
 5. [Thêm hình nền (add background)](add_background.md)
-6. Thêm nhân vật
+6. [Bài tập: Thêm nhân vật (exercise: add player)](ex_add_player.md)
+6. [Thêm nhân vật (add player)](add_player.md)
 7. Di chuyển nhân vật
 8. Vòng lặp game (game loop)
 9. Tấn công
