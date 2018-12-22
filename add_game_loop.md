@@ -88,3 +88,6 @@ public class GameWindow extends JFrame {
 }
 </pre>
 
+11. Chạy chương trình
+
+12. Kết quả là nhân vật đã được vẽ lại khi di chuyển, vòng lặp game đã hoạt động
