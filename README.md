@@ -9,7 +9,7 @@
 6. [Bài tập: Thêm nhân vật (exercise: add player)](ex_add_player.md)
 6. [Thêm nhân vật (add player)](add_player.md)
 7. [Thêm di chuyển nhân vật (add player movement)](add_player_movement.md)
-8. Vòng lặp game (game loop)
+8. [Thêm vòng lặp game (add game loop)](add_game_loop.md)
 9. Tấn công
 10. Va chạm (Collision) và tiêu diệt
 11. Hoạt cảnh (Animation)
