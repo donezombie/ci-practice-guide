@@ -183,19 +183,23 @@ if(e.getKeyCode() == KeyEvent.VK_LEFT) {
 
 25. Chạy chương trình và thử nhấn các phím
 
-26. Kết quả là nhân vật chính không di chuyển theo phím bấm như kỳ vọng. 
+26. Kết quả là nhân vật chính không di chuyển theo phím bấm như kỳ vọng.
 
-27. Lý do cho kết quả này không phải là do phần code vừa thêm ở `onKeyPressed()` không được chạy hay cách cập nhật tọa độ nhân vật chưa đúng mà hàm `paintComponent()` không được chạy lại mặc dù tọa độ đã được cập nhật, cần kích hoạt việc chạy lại `paintComponent()` bằng cách gọi hàm `repaint()` của `GameCanvas`
+![Player not moving](images/add_player_movement/player_not_moving.png)
+
+27. Lý do cho kết quả này không phải là do phần code vừa thêm ở `onKeyPressed()` không được chạy hay cách cập nhật tọa độ nhân vật chưa đúng mà hàm `paintComponent()` không được chạy lại mặc dù tọa độ đã được cập nhật, cần kích hoạt việc chạy lại `paintComponent()` bằng cách gọi hàm `repaint()` của `GameCanvas` hay `JFrame`
 
 <pre>
 public void keyPressed(KeyEvent e) {
     ...
-    repaint();
+    <b>repaint();</b>
 }
 </pre>
 
 28. Chạy lại chương trình và nhấn thử các phím
 
 29. Kết quả là nhân vật đã đi chuyển khi bấm phím
+
+![Player movement result](images/add_player_movement/player_movement_result.gif)
 
 30. Nếu để ý kỹ sẽ thấy rằng di chuyển của nhân vật có phần hơi lag giật chứ không được liên tục, mượt mà khi bấm phím, vấn đề này có thể khắc phục được, tuy nhiên sẽ được hướng dẫn ở các bài sau
