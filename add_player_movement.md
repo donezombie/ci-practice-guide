@@ -127,7 +127,7 @@ Chú ý: Để phân biệt, mỗi phím trên bàn phím được đánh một 
 
 ![Key left pressed](images/add_player_movement/key_left_result.png)
 
-19. Thực hiện việc kiểm tra phím với 3 phím mũi trên sang phái &rarr; mũi tên lên &uarr; mũi tên xuống &darr;
+19. Thực hiện việc kiểm tra phím với 3 phím mũi trên sang phái &rarr;, mũi tên lên &uarr;, mũi tên xuống &darr;
 
 <pre>
 @Override
@@ -203,3 +203,15 @@ public void keyPressed(KeyEvent e) {
 ![Player movement result](images/add_player_movement/player_movement_result.gif)
 
 30. Nếu để ý kỹ sẽ thấy rằng di chuyển của nhân vật có phần hơi lag giật chứ không được liên tục, mượt mà khi bấm phím, vấn đề này có thể khắc phục được, tuy nhiên sẽ được hướng dẫn ở các bài sau
+
+31. Sắp xếp lại code: di chuyển khai báo của hai thuộc tính lên phía trên cùng của class `GameCanvas`
+
+<pre>
+BufferedImage background;
+BufferedImage player;
+<b>int playerX = 176;
+int playerY = 500;</b>
+
+public GameCanvas() {
+    ...
+</pre>
