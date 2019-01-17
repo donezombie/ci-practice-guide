@@ -11,7 +11,12 @@
 9. [Thêm di chuyển nhân vật (add player movement)](add_player_movement.md)
 10. [Thêm vòng lặp game (add game loop)](add_game_loop.md)
 11. [Cải thiện di chuyển của nhân vật (better player movement)](better_player_movement.md)
-9. Tấn công
-10. Va chạm (Collision) và tiêu diệt
-11. Hoạt cảnh (Animation)
-12. Chuyển cảnh (Scence transition)
+12. [Bài tập: Thêm quân địch (add enemey)](ex_add_enemy.md)
+13. [Thêm quân địch](add_enemy.md)
+13. [Bài tập: Thêm tấn công cho nhân vật (add player attack)](ex_add_player_attack.md)
+13. [Thêm tấn công cho nhân vật: Lời giải (add player attack solution)](ex_add_player_attack_solution.md)
+14. [Sử dụng class & object để đóng gói các đối tượng (Use class)](use_class.md)
+14. [Thêm tấn công cho nhân vật (add player attack)](add_player_attack.md)
+13. Va chạm và tiêu diệt
+14. Hoạt cảnh (Animation)
+15. Chuyển cảnh (Scence transition)
