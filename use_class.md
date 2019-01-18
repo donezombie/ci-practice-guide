@@ -280,4 +280,8 @@ sẽ giống với
 
 ![Bug fixed](images/use_class/bug_fixed.gif)
 
-35. Việc chuyển enemy sang thành 1 class đã hoàn tất
+35. Việc chuyển enemy sang thành 1 class đã hoàn tất.
+
+36. Bonus: `Mẹ ơi, con thấy các biến chưa được khởi tạo`
+
+![Variables uninitialized](images/use_class/var_unintialized_meme.jpg)
