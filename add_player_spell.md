@@ -1,2 +1,4 @@
 ## TechKids - Code Intensive - Hướng dẫn thực hành
-### Thêm tấn công cho player
+### Thêm bùa cho nhân vật
+
+To be done

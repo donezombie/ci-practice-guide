@@ -140,7 +140,7 @@ void paint(Graphics g) {
 public class GameCanvas extends JPanel {
     BufferedImage background;
     BufferedImage player;
-    <s>BufferedImage enemy;<//s>
+    <s>BufferedImage enemy;</s>
     int playerX = 176;
     int playerY = 500;
     <s>int enemyX = 100;</s>

@@ -16,7 +16,10 @@
 13. [Bài tập: Thêm tấn công cho nhân vật (add player attack)](ex_add_player_attack.md)
 13. [Thêm tấn công cho nhân vật: Lời giải (add player attack solution)](ex_add_player_attack_solution.md)
 14. [Sử dụng class & object để đóng gói các đối tượng (Use class)](use_class.md)
-14. [Thêm tấn công cho nhân vật (add player attack)](add_player_attack.md)
-13. Va chạm và tiêu diệt
-14. Hoạt cảnh (Animation)
-15. Chuyển cảnh (Scence transition)
+15. [Bài tập: Thêm bùa cho nhân vật](ex_add_player_spell.md)
+16. [Thêm bùa cho nhân vật](add_player_spell.md)
+17. [Thêm tấn công cho cho nhân vật](add_player_attack.md)
+17. [Áp dụng kế thừa](inheritance.md)
+18. Va chạm và tiêu diệt
+17. Hoạt cảnh (Animation)
+18. Chuyển cảnh (Scence transition)
