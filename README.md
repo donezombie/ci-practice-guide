@@ -20,6 +20,7 @@
 16. [Sử dụng class để đóng gói player](use_class_on_player.md)
 16. [Bài tập: Thêm bùa cho nhân vật](ex_add_player_spell.md)
 17. [Thêm bùa cho nhân vật](add_player_spell.md)
+17. [Thêm nhiều bùa cho nhân vật](add_player_spell_list.md)
 18. [Thêm tấn công cho cho nhân vật](add_player_attack.md)
 19. [Áp dụng kế thừa](inheritance.md)
 20. [Bài tập: Áp dụng kế thừa cho player và enemy](ex_more_inheritance.md)
