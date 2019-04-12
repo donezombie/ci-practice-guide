@@ -29,7 +29,7 @@ public class Enemy {
 
 9.Các thuộc tính và thao tác này được liệt kê và phân loại như sau:
 
-* Các thuộc tính, dữ liệu
+* Các thuộc tính, dữ liệu (hiểu đơn giản là biến)
 
 <pre><b>
 int enemyX = 100; // Tọa độ x
@@ -38,7 +38,7 @@ BufferedImage enemy; // Ảnh quân địch
 </b>
 </pre>
 
-* Các thao tác xử lý
+* Các thao tác xử lý (hiểu đơn giản là các hàm)
 <pre>
 public GameCanvas() {
     try {
@@ -124,7 +124,7 @@ protected void paintComponent(<b>Graphics g</b>) {
 }
 </pre>
 
-16. Để `Enemy` có được `Graphics g` để thao tác, cần điều chỉnh lại hàm `paint` của class này để hàm này nhận được `Graphics g` từ `GameCanvas`
+16. Để `Enemy` có `Graphics g` để thao tác, cần điều chỉnh lại hàm `paint` của class này để hàm này nhận được `Graphics g` từ `GameCanvas`
 
 <pre>
 void paint(Graphics g) {
@@ -149,7 +149,7 @@ public class GameCanvas extends JPanel {
 }
 </pre>
 
-19. Sau khi xóa các phần trên đi, `IntelliJ` sẽ báo lỗi các phần code thao tác liên quan do các định nghĩa này đã không còn tồn tại
+19. Sau khi xóa các phần trên đi, `IntelliJ` sẽ báo lỗi các phần code thao tác liên quan, do các định nghĩa này đã không còn tồn tại
 
 ![Load image error](images/use_class/load_enemy_image_error.png)
 
@@ -217,7 +217,7 @@ Chú ý: Phần dưới đây ngoài việc sửa lỗi trên còn hướng dẫ
 
 ![NullPointerException error type](images/use_class/null_pointer_exception_error_type.png)
 
-28. Từ loại lỗi, có thể kết luận ở đâu đó trong chương trình của 
+28. Từ loại lỗi, chắc chắn đâu đó ở trong chương trình, một object có giá trị null đang được truy cập vào thuộc tính hoặc được gọi hàm.
 
 <pre>
 at GameCanvas.<init>(GameCanvas.java:27)
@@ -235,7 +235,7 @@ at Program.main(Program.java:3)
 
 ![GameCanvas error line 46](images/use_class/game_canvas_line_46.png)
 
-29. Tương tự như `Program.java`, dòng này của `GameWindow.java` không phải là dòng xảy ra lỗi trực tiếp, di chuyển đến vị trí tiếp theo ở trong file `GameCanvas.java`
+29. Với lý do tương tự như `Program.java`, dòng này của `GameWindow.java` không phải là dòng trực tiếp gây lỗi, di chuyển đến vị trí tiếp theo ở trong file `GameCanvas.java`
 
 <pre>
 <b>at GameCanvas.<init>(GameCanvas.java:27)</b>
@@ -245,7 +245,7 @@ at Program.main(Program.java:3)
 
 ![GameCanvas line 27](images/use_class/game_canvas_27.png)
 
-30. Ở đây, hàm `loadImage()` được gọi với object `e` và không phải là hàm tạo (`new`), rất có thể ở tại thời điểm này, `e` chưa được khởi tạo, có thể kiểm tra nhanh bằng cách log ở trước dòng này
+30. Ở đây, hàm `loadImage()` được gọi với object `e` và không phải là hàm tạo (`new`), rất có thể ở tại thời điểm này, `e` chưa được khởi tạo, có thể kiểm tra nhanh bằng cách log ra gía trị của `e` ở trước dòng này
 
 <pre>
         ...
@@ -268,7 +268,7 @@ sẽ giống với
 
 `Enemy e = null;`
 
-33. Để chữa lỗi, việc cần làm là khởi tạo e
+33. Để chữa lỗi, việc cần làm là khởi tạo `e`
 
 <pre>
     public GameCanvas() {
