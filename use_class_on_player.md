@@ -267,6 +267,10 @@ void updatePlayerPosition() {
   if (downPressed) {
     playerY += 5;
   }</b>
-  
+
 }
 </pre>
+
+7. Chạy thử, nếu thấy các chức năng của player vẫn hoạt động bình thường, việc chuyển đổi các chức năng của Player thành class đã hoàn tất
+
+![Player after refactoring](images/use_class_on_player/player_done_refactoring.gif)
