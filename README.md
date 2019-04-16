@@ -11,7 +11,7 @@
 9. [Thêm di chuyển nhân vật (add player movement)](add_player_movement.md)
 10. [Thêm vòng lặp game (add game loop)](add_game_loop.md)
 11. [Cải thiện di chuyển của nhân vật (better player movement)](better_player_movement.md)
-12. [Bài tập: Thêm quân địch (add enemey)](ex_add_enemy.md)
+12. [Bài tập: Thêm quân địch (add enemy)](ex_add_enemy.md)
 14. [Thêm quân địch](add_enemy.md)
 15. [Bài tập: Thêm tấn công cho nhân vật (add player attack)](ex_add_player_attack.md)
 16. [Thêm tấn công cho nhân vật: Lời giải (add player attack solution)](ex_add_player_attack_solution.md)
