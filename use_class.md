@@ -99,7 +99,7 @@ public class Enemy {
         }
     }
     
-    void updatePosition() {
+    void move() {
         y += 1; // Cập nhật tọa độ ~ di chuyển
     }
     
@@ -201,7 +201,7 @@ protected void paintComponent(Graphics g) {
 <pre>
 void updateEnemyPosition() {
     <s>enemyY += 1;</s>
-    <b>e.updatePosition();</b>
+    <b>e.move();</b>
 }
 </pre>
 

@@ -80,10 +80,10 @@ void updatePlayerPosition() {
 }
 </pre>
 
-9. Thực hiện cập nhật tọa độ của quân địch trong hàm `updateEnemyPosition()`. Do quân địch di chuyển tự dộng, việc cập nhật tọa độ được thực hiện mà không cần điều kiện từ bán phím
+9. Thực hiện cập nhật tọa độ của quân địch trong hàm `move()`. Do quân địch di chuyển tự dộng, việc cập nhật tọa độ được thực hiện mà không cần điều kiện từ bán phím
 
 <pre>
-void updateEnemyPosition() {
+void move() {
     enemyY += 1;
 }
 </pre>

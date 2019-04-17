@@ -17,7 +17,7 @@
 
 5. Với những phần code giống nhau này, một người lập trình hướng đối tượng sẽ xử lý như sau
 
-6. Tạo ra 1 class, tạm gọi là class `X`, chứa tất cả các phần code chung (thuộc tính hay hàm)
+6. Tạo ra 1 class, tạm gọi là class `X`, chứa tất cả các phần code chung (cả thuộc tính và phương thức)
 
 ![Class X](images/inheritance/class_x.png)
 
@@ -43,7 +43,7 @@ Chú ý: Hàm `move()` và `loadImage()` mặc dù trùng tên nhưng nội dung
 ![New game object](images/inheritance/new_game_object.png)
 
 12. Trong `GameObject`, thực hiện thêm các thuộc tính `x`, `y`, `image` và hàm/phương thức `loadImage()`, `paint()`
-i
+
 <pre>
 <b>
 import javax.imageio.ImageIO;
@@ -52,7 +52,6 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 </b>
-
 public class GameObject {
     <b>int x;
     int y;
@@ -75,10 +74,10 @@ public class Enemy <b>extends GameObject</b> {
 15. Sau đó bỏ đi những phần code có sẵn nhờ kế thừa
 
 <pre>
-public class Enemy <b>extends GameObject</b> {<s>
-    int x;
-    int y;
-    BufferedImage image;</s>
+public class Enemy <b>extends GameObject</b> {
+    <s>int x;</s>
+    <s>int y;</s>
+    <s>BufferedImage image;</s>
 
     void loadImage() {
         try {
@@ -88,15 +87,14 @@ public class Enemy <b>extends GameObject</b> {<s>
         }
     }
 
-    void updatePosition() {
+    void move() {
         y += 1;
     }
-<s>
-    void paint(Graphics g) {
-        g.drawImage(image, x, y,null);
-    }
-</s>
+
+    <s>void paint(Graphics g) {</s>
+        <s>g.drawImage(image, x, y, null);</s>
+    <s>}</s>
 }
 </pre>
 
-16. Chạy chương trình. Nếu chương trình chạy được không lỗi, việc kế thừa `GameObject` tại Enemy đã thành công.
+16. Chạy chương trình. Nếu chương trình chạy được không lỗi, việc kế thừa `GameObject` ở `Enemy` đã thành công.
