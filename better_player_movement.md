@@ -32,16 +32,16 @@ public void keyPressed(KeyEvent e) {
 <pre>
 @Override
 public void keyPressed(KeyEvent e) {
-    if(e.getKeyCode() == KeyEvent.VK_LEFT) {
-        <b><s>playerX -= 5;</s></b>
-    } else if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
-        <b><s>playerX += 5;</s></b>
-    } else if (e.getKeyCode() == KeyEvent.VK_UP) {
-        <b><s>playerY -= 5;</s></b>
-    } else if(e.getKeyCode() == KeyEvent.VK_DOWN) {
-        <b><s>playerY += 5;</s></b>
-    }
-    repaint();
+  if(e.getKeyCode() == KeyEvent.VK_LEFT) {
+    <b><s>playerX -= 5;</s></b>
+  } else if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
+    <b><s>playerX += 5;</s></b>
+  } else if (e.getKeyCode() == KeyEvent.VK_UP) {
+    <b><s>playerY -= 5;</s></b>
+  } else if(e.getKeyCode() == KeyEvent.VK_DOWN) {
+    <b><s>playerY += 5;</s></b>
+  }
+  repaint();
 }
 </pre>
 
@@ -94,7 +94,7 @@ void updatePlayerPosition() {
 }
 </pre>
 
-Chú ý: Các thuộc tính `leftPressed`, `rightPressed`, `topPressed`, `downPressed` là các thuộc tính kiểu `boolean`, dùng để đánh dấu liệu các phím &larr; &rarr; &uarr; &darr; theo thứ tự đó có đang được nhấn hay không. Ví dụ: nếu `rightPressed` đang có giá trị `true`, nghĩa là phím &rarr; đang được nhấn, ngược lại, nếu đang có giá trị là `false`, phím &rarr; đang không được nhả ra.
+Chú ý: Các thuộc tính `leftPressed`, `rightPressed`, `topPressed`, `downPressed` là các thuộc tính kiểu `boolean`, dùng để chỉ ra các phím &larr; &rarr; &uarr; &darr; theo thứ tự đó có đang được nhấn hay không. Ví dụ: nếu `rightPressed` đang có giá trị `true`, nghĩa là phím &rarr; đang được nhấn, ngược lại, nếu đang có giá trị là `false`, phím &rarr; đang không được nhả ra.
 Các thuộc tính này, giống nhu `updatePlayerPosition()` ở mục 7, chưa tồn tại, sẽ được khai báo và xử lý sau
 
 8. Thực hiện khai báo bốn thuộc tính `boolean`: `leftPressed`, `rightPressed`, `topPressed` và `downPressed`
@@ -154,4 +154,4 @@ public void keyReleased(KeyEvent e) {
 
 ![Soomth player movement](images/better_player_movement/smooth_player_movement.gif)
 
-Hiện tại, nhân vật có thể di chuyển vượt ra khỏi `GameCanvas`. Việc giới hạn di chuyển nhân vật sẽ được thực hiện ở các bài sau
+Hiện tại, nhân vật có thể di chuyển vượt ra khỏi `GameCanvas`. Việc giới hạn di chuyển nhân vật sẽ được thực hiện ở một trong các bài sau
